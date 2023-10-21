@@ -1,0 +1,13 @@
+.responsive-app-bar {
+  width: 100%;
+  height: 100vh; /* Make the component full-screen by setting its height to the viewport height */
+
+  /* Add any additional styling for your component here */
+}
+
+/* Example responsiveness for child elements */
+@media (max-width: 768px) {
+  .responsive-app-bar {
+    /* Modify the styling for small screens, if needed */
+  }
+}

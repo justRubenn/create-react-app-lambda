@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import mylogo from "./component/logo/logo.png";
+import "./App.css";
+import ResponsiveAppBar from "./component/NavBar";
+import HomePage from "./component/HomePage";
+import { Box, Container, Stack } from "@mui/material";
+import Services from "./component/Services";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import ListOfCard from "./component/ListOfCard";
 
 function App() {
+  const page = 0;
+  useEffect(() => {});
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Stack sx={{ display: "flex", direction: "column", alignItems: "center", justifyContent: "center", backgroundColor: "#031F44" }}>
+        {/*<BrowserRouter>
+        <Routes>
+          <Route path="/">
+            <Route index element={<HomePage />} />
+            <Route path="service" element={<Services />} />
+          </Route>
+        </Routes>
+      </BrowserRouter> */}
+
+        <ResponsiveAppBar />
+        <HomePage />
+        <ListOfCard />
+      </Stack>
+
+      {/* <div id="service">
+        <Services />
+      </div> */}
     </div>
   );
 }
