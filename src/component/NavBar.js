@@ -44,7 +44,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ background: "transparent", boxShadow: "none" }}>
+    <AppBar position="static" sx={{ background: "white", boxShadow: "none" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: { xs: 1, md: 10 }, display: "flex" }} >
@@ -59,7 +59,7 @@ function ResponsiveAppBar() {
                   fontFamily: "monospace",
                   fontWeight: 700,
                   letterSpacing: ".1rem",
-                  color: "inherit",
+                  color: "black",
                   textDecoration: "none",
                 }}
               >
@@ -70,7 +70,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Stack direction={"row"} justifyContent={"flex-end"} alignItems={"center"}>
               {pages.map((page) => (
-                <Button key={page.page} href={page.path} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
+                <Button key={page.page} href={page.path} onClick={handleCloseNavMenu} sx={{ my: 2, color: "black", display: "block" }}>
                   <Typography fontWeight={700} fontSize={"1.3em"}>{page.page} </Typography>
                 </Button>
               ))}
@@ -78,7 +78,7 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "none" } }}>
-            <IconButton size="large" aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true" onClick={handleOpenNavMenu} color="inherit">
+            <IconButton size="large"  aria-controls="menu-appbar" aria-haspopup="true" onClick={handleOpenNavMenu} color="blcak">
               <MenuIcon />
             </IconButton>
           </Box>

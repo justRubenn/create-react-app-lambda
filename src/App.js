@@ -8,13 +8,14 @@ import Services from "./component/Services";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useEffect } from "react";
 import ListOfCard from "./component/ListOfCard";
+import Footer from "./component/Footer";
 
 function App() {
   const page = 0;
   useEffect(() => {});
   return (
     <div>
-      <Stack sx={{ display: "flex", direction: "column", alignItems: "center", justifyContent: "center", backgroundColor: "#031F44" }}>
+      <Stack sx={{ display: "flex", direction: "column", alignItems: "center", justifyContent: "center" }}>
         {/*<BrowserRouter>
         <Routes>
           <Route path="/">
@@ -27,6 +28,8 @@ function App() {
         <ResponsiveAppBar />
         <HomePage />
         <ListOfCard />
+        <Footer/>
+
       </Stack>
 
       {/* <div id="service">
