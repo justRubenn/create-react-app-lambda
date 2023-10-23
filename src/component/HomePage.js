@@ -41,7 +41,7 @@ function HomePage() {
           <img src={outsourcing} width={"100%"} height="500vh" />
         </Box>
         <Box sx={{ backgroundColor: "#D9D9D9", height: "100%", width: "100%" }}>
-          <div id="HomePage"></div>
+          <div id="homepage"></div>
           <Box sx={{ display: "flex", flexDirection: "row", minHeight: "40vh", alignItems: "center" }}>
             <Container sx={{ justifyContent: "center", display: "flex", flexDirection: "column" }}>
               <Container>

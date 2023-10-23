@@ -17,6 +17,7 @@ const Footer = () => {
   let companyName = "PT JOEL PUTRI MITRA LESTARI";
   return (
     <Box sx={{ display: "flex", flexDirection: "row", width: "100%", height: "30vh", backgroundColor: "white" }}>
+        <div id="footer"></div>
       <Container sx={{ display: "flex", width: "60%", backgroundColor: "white", alignItems: "center" }}>
         <img src={mylogo} alt="logo" loading="lazy" height={"35vw"} />
         <Typography sx={{ fontSize: "20px", fontWeight: "800", paddingX: "5vh" }}>{companyName}</Typography>
@@ -24,7 +25,7 @@ const Footer = () => {
       <Box sx={{ display: "flex", flexDirection: "column", width: "40%", backgroundColor: "white", justifyContent: "center" }}>
         <Container sx={{ display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center", marginTop: "2vh" }}>
           <img src={wa} alt="waIcon" loading="lazy" height={"35vw"} />
-          <Typography sx={{ fontWeight: "700", marginX: "1vw" }}>+628-2370-3844-34</Typography>
+          <Typography sx={{ fontWeight: "700", marginX: "1vw" }}>+62-823-7038-4434</Typography>
         </Container>
         <Container sx={{ display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center", marginTop: "2vh" }}>
           <img src={email} alt="waIcon" loading="lazy" height={"35vw"} />

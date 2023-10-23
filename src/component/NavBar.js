@@ -18,9 +18,9 @@ import { Link, Stack } from "@mui/material";
 import { HashLink } from "react-router-hash-link";
 
 const pages = [
-  { page: "Home", path: "#HomePage" },
+  { page: "Home", path: "#homepage" },
   { page: "Service", path: "#service" },
-  { page: "CONTACT & SUPPORT", path: "#" },
+  { page: "CONTACT & SUPPORT", path: "#footer" },
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
